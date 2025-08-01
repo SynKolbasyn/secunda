@@ -1,0 +1,22 @@
+[project]
+name = "secunda"
+version = "0.1.0"
+description = "Test task for Secunda"
+readme = "README.md"
+requires-python = ">=3.13, <3.14"
+dependencies = [
+    "alembic==1.16.4",
+    "fastapi[standard]==0.116.1",
+    "sqlalchemy==2.0.42",
+]
+
+[dependency-groups]
+dev = [
+    "aiosqlite==0.21.0",
+    "ruff>=0.12.7",
+]
+
+[tool.ruff]
+src = ["./app/"]
+lint.select = ["ALL"]
+lint.ignore = ["D100", "D101", "D102", "D103", "D104", "D106", "D107", "D203", "D212"]
