@@ -1,0 +1,21 @@
+# project
+**/.git/
+**/.github/
+**/database/
+
+**/*.yaml
+**/*.md
+
+**/Dockerfile
+**/.env
+
+
+# backend
+**/.venv/
+**/__pycache__/
+**/.ruff_cache/
+
+**/*.sqlite3
+**/*.sqlite
+**/*.db
+**/*.lock
