@@ -6,7 +6,12 @@ readme = "README.md"
 requires-python = ">=3.13, <3.14"
 dependencies = [
     "alembic==1.16.4",
+    "asyncpg>=0.30.0",
     "fastapi[standard]==0.116.1",
+    "phonenumbers==9.0.10",
+    "psycopg[binary]>=3.2.9",
+    "pydantic-extra-types==2.10.5",
+    "python-dotenv>=1.1.1",
     "sqlalchemy==2.0.42",
 ]
 
@@ -17,6 +22,6 @@ dev = [
 ]
 
 [tool.ruff]
-src = ["./app/"]
+src = ["./src/", "./migrations/"]
 lint.select = ["ALL"]
-lint.ignore = ["D100", "D101", "D102", "D103", "D104", "D106", "D107", "D203", "D212"]
+lint.ignore = ["D100", "D101", "D102", "D103", "D104", "D105", "D106", "D107", "D203", "D212"]
